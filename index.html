@@ -26,6 +26,7 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-md-3 text-center invisible" id="directions1">
+                <p>Time to fight!</p>
             </div>
             <div class="col-md-4 text-center visible" id="directions2">
                 <p>Pick your Character!</p>
@@ -35,7 +36,7 @@
             </div>
         </div>
         <div class="row justify-content-center invisible" id="boardRow">
-            <div class="col-md-3 border border-success rounded mx-1 text-success">
+            <div class="col-md-3 border border-success rounded mx-1 text-success" id="yourCharacter">
                 <div class="row">
                     <div class="col-lg-12">
                         <h4>Your Fighter!</h4>
@@ -43,12 +44,12 @@
                 </div>
                 <div class="row">
                 </div>
-                <div class="row align-items-center h-100">
-                    <div class="col-md-12" id="yourCharacter">
+                <div class="row">
+                    <div class="col-md-12">
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 border border-primary rounded" id="fightBoard">
+            <div class="col-md-4 border border-primary rounded " id="fightBoard">
                 <div class="row">
                     <div class="col-md-6" id="yourFighter">
                     </div>
@@ -56,34 +57,46 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 border border-danger rounded mx-1 text-danger" id="enemies">
+            <div class="col-md-3 border border-danger rounded mx-1 text-danger">
                 <div class="row">
                     <div class="col-lg-12">
                         <h4>enemies</h4>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-12" id="enemies">
+                <div class="row justify-content-center">
+                    <div class="col-md-6" id="enemies">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row invisible" id="controlsRow">
-            <div class="row">
-                <div class="col-md-12">
-                    <h5>Controls!</h5>
-                </div>
+        <div class="row">
+            <div class="col-lg-12 text-center text-info invisible" id="infoBoardRow">
+                <h3 id="infoBoard">Click the attack button to hit your opponent</h3>
             </div>
-
-            <div class="row">
-                <div class="col-md-12">
-                    <button type="button" class="btn btn-primary" id="attack">attack</button>
+        </div>
+        <div class="row invisible justify-content-center" id="controlsRow">
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h5>Controls!</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="button" class="btn btn-primary" id="attack">attack</button>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="row invisible" id="defeatedRow">
-            <div class="col-md-12" id="defeated">
-                <h4>Defeated!</h4>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>Defeated!</h4>
+                    </div>
+                </div>
+                <div class="row" id="defeated">
+                </div>
             </div>
         </div>
         <div class="row justify-content-end" id="resetRow">
