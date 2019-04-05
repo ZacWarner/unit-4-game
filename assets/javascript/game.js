@@ -207,7 +207,7 @@ $(document).ready(function () {
 
         picked = false;
         defeatedCount = 0;
-        $("#yourCharacter, #enemies, #defeatedRow, #yourFighter, #yourOpponent, #characterSelect ").empty();
+        $("#yourCharacter, #enemies, #defeated, #yourFighter, #yourOpponent, #characterSelect ").empty();
         gameSetUp(tile1, tile2, tile3, tile4);
         resetVisible("#characterSelect");
         resetInvis("#directions1");
